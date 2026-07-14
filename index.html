@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sankari's Physiocare and Rehab Clinic | Your Family's Health Starts Here</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container navbar-inner">
+    <img src="logo.png" alt="SANKARI'S Physiocare & Rehab Logo" class="brand-logo">
+    <div class="logo">SANKARI'S <span>Physiocare &amp; Rehab</span></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks" background-size="cover">
+      <a href="#home">Home</a>
+      <a href="#treatments">Treatments</a>
+      <a href="#team">Our Team</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <img src="image.png" alt="Physiotherapist treating a patient">
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <p class="eyebrow">Trusted Healthcare Excellence</p>
+    <h1>Your Family's<br>Health Starts Here</h1>
+    <p class="hero-sub">Experience compassionate care, modern treatments, and a team of dedicated specialists committed to your well-being</p>
+    <a href="https://wa.me/917305599874" class="btn btn-nav" target="_blank">Contact with me</a>
+  </div>
+</section>
+
+<!-- TREATMENT / SERVICES -->
+<section class="treatment" id="treatments">
+  <div class="container treatment-inner">
+    <div class="treatment-image">
+      <img src="treatment-anatomy.jpg" alt="Spine and neck anatomy illustration">
+    </div>
+    <div class="treatment-cards">
+      <div class="card">
+        <h3>Treatment</h3>
+        <ul>
+          <li>Neck Pain</li>
+          <li>Sprain</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Therapy</h3>
+        <ul>
+          <li>Clinical Physiotherapy</li>
+          <li>Orthopaedic Physiotherapy</li>
+          <li>Stroke Physiotherapy Rehabilitation</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Services</h3>
+        <ul>
+          <li>Sport Injury Rehabilitation</li>
+          <li>Adult Rehabilitation</li>
+          <li>Cerebral Palsy Rehabilitation</li>
+          <li>Full Body Check Up</li>
+          <li>Psychotherapy Counselling</li>
+          <li>Arthritis Ankylosing Rehabilitation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="team" id="team">
+  <div class="container team-inner">
+    <div class="team-member member-1">
+      <div class="member-photo"><img src="dr-sivasankari.jpg" alt="Dr. SivaSankari" class="img-fluid"></div>
+      <div class="member-info">
+        <h3>Dr. SivaSankari, BPT, MPT (Neuro)</h3>
+        <p class="role role-red">Chief Physiotherapist &amp; Neuro Rehabilitation Specialist</p>
+        <p class="bio">Dr. SivaSankari is a qualified physiotherapist with a Bachelor of Physiotherapy (BPT) and a Master of Physiotherapy (MPT) specializing in Neurology. She has experience in treating neurological conditions, stroke rehabilitation, spinal cord injuries, balance disorders, and movement-related problems. She is dedicated to providing personalized treatment plans that help patients recover effectively.</p>
+      </div>
+    </div>
+
+    <div class="team-member member-2">
+      <div class="member-photo"><img src="mr-sathishkumar.jpg" alt="Mr. Sathishkumar"></div>
+      <div class="member-info">
+        <h3>Mr. Sathishkumar, BPT</h3>
+        <p class="role role-blue">Chief Physiotherapist &amp; Neuro Rehabilitation Specialist</p>
+        <p class="bio">Mr. Sathishkumar is a <u>skilled</u> physiotherapist with a Bachelor of Physiotherapy (BPT). He provides treatment for back pain, neck pain, joint pain, sports injuries, post-operative rehabilitation, and musculoskeletal conditions. He focuses on evidence-based physiotherapy techniques to help patients recover safely, improve strength, and return to their daily activities with confidence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <div class="container gallery-inner">
+    <div class="gallery-grid">
+      <img class="g-front" src="gallery-front.jpg" alt="Sankari's Physiocare and Rehab Clinic entrance">
+      <img class="g-desk" src="gallery-desk.jpg" alt="Clinic reception desk">
+      <img class="g-room" src="gallery-room.jpg" alt="Treatment room">
+      <img class="g-treatment" src="gallery-treatment.jpg" alt="Patient receiving electrotherapy">
+      <img class="g-sign" src="gallery-signboard.jpg" alt="Clinic services signboard">
+    </div>
+  </div>
+</section>
+
+<!-- MAP / CONTACT -->
+<section class="visit" id="contact">
+  <div class="container visit-inner">
+    <div class="visit-map">
+      <div background-size="cover"></div>
+      <img src="map.jpg" alt="Map location of Sankari's Physiocare and Rehab Clinic" class="img-fluid">
+    </div>
+    <div class="visit-info">
+      <h2>Visit Our Clinic</h2>
+      <p>No 1/2, Shop No G 6, Home Visit Physiotherapist, Opposite to Kauvery Hospital, Vijaya Ganapathi Nagar, Saligramam, Chennai-600093, Tamil Nadu</p>
+      <p class="phone">Phone: +91 73055 99874</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2026 Sankari's Physiocare and Rehab Clinic. All rights reserved.</p>
+    <!-- Hidden Dashboard Entry Point -->
+    <p style="margin-top: 12px;">
+      <a href="{{ url_for('admin_dashboard') }}" target="_blank" style="text-decoration: underline; color: #9fb4d8; font-size: 12px;">
+        Open Admin Dashboard →
+      </a>
+    </p>
+  </div>
+</footer>
+
+<script src="{{ url_for('static', filename='js/app-system.js') }}"></script>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
